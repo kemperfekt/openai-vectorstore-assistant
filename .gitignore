@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+openai_config.py
+data/
+.venv/
