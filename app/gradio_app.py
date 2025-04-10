@@ -21,7 +21,7 @@ def frage_beantworten(user_input, history):
         )
         run = openai.beta.threads.runs.create_and_poll(
             thread_id=thread.id,
-            assistant_id=ASSISTANT_ID,
+            assistant_id="asst_gD8e064WP15q6ks3inNaDtW2",
         )
         messages = openai.beta.threads.messages.list(thread_id=thread.id)
         for msg in reversed(messages.data):
@@ -32,9 +32,9 @@ def frage_beantworten(user_input, history):
         return f"❌ Fehler: {str(e)}"
 
 
-with gr.Blocks(title="Dokumenten-Assistent") as demo:
-    gr.Markdown("# 🤖 Dokumenten-Assistent")
-    gr.Markdown("Stelle Fragen zu deinen hochgeladenen Dateien.")
+with gr.Blocks(title="Nasenblick-KI") as demo:
+    gr.Markdown("# 🤖 Nasenblick-KI")
+    gr.Markdown("Stelle Fragen zur Erziehung deines Hundes.")
     chat = gr.ChatInterface(fn=frage_beantworten)
 
 demo.launch()
