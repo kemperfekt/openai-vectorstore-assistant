@@ -12,7 +12,7 @@ def init_thread():
 
 thread = init_thread()
 
-def frage_beantworten(user_input):
+def frage_beantworten(user_input, history):
     try:
         openai.beta.threads.messages.create(
             thread_id=thread.id,
@@ -30,6 +30,7 @@ def frage_beantworten(user_input):
         return "Keine Antwort erhalten 😕"
     except Exception as e:
         return f"❌ Fehler: {str(e)}"
+
 
 with gr.Blocks(title="Dokumenten-Assistent") as demo:
     gr.Markdown("# 🤖 Dokumenten-Assistent")
