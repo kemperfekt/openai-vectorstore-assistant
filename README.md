@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🧠 OpenAI Vector Store Assistant
 
 Ein einfaches Projekt zur Nutzung von OpenAI Vector Stores + GPT-4 Assistants.
@@ -28,3 +29,18 @@ Starte Web-App:
 ```bash
 python app/gradio_app.py
 ```
+=======
+---
+title: Nasenblick Ki
+emoji: 🐨
+colorFrom: blue
+colorTo: red
+sdk: gradio
+sdk_version: 5.24.0
+app_file: app.py
+pinned: false
+license: mit
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+>>>>>>> 4829e01 (initial commit)
