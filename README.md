@@ -1,3 +1,4 @@
+---
 title: Nasenblick KI
 colorFrom: blue
 colorTo: red
@@ -6,3 +7,4 @@ sdk_version: 5.24.0
 app_file: app/gradio_app.py
 pinned: false
 license: mit
+---
