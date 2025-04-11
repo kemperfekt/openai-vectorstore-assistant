@@ -1,5 +1,4 @@
 title: Nasenblick KI
-emoji: 🐨
 colorFrom: blue
 colorTo: red
 sdk: gradio
